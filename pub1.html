@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomelo: A Collaborative Education Technology Interaction Robot</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="icon" type="image/x-icon" href="tab2.png">
+
+    <style>
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .download-button {
+            background: none;
+            color: black;
+            border: 1px solid #e02b9b; /* Custom border color */
+            padding: 4px 10px; /* Adjusted padding */
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif;
+            font-size: 12px; /* Adjusted font size */
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .download-button:hover {
+            background-color: rgba(211, 211, 211, 0.5); /* Light gray transparent color */
+            border-color: black;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ecetabag.com</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#blog">Papers</a></li>
+                <li><a href="EceTabag_Resume.pdf" download class="download-button" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="blog-post">
+        <article>
+            <h2>Pomelo: A Collaborative Education Technology Interaction Robot</h2>
+            <div class="top-section">
+                <p><em>Published at: <a href="https://ieeexplore.ieee.org/document/8673160" target="_blank">https://ieeexplore.ieee.org/document/8673160</a></em></p>
+
+                <a href="Pomelo_a_Collaborative_Education_Technology_Interaction_Robot.pdf" download class="download-button" target="_blank">Download PDF</a>
+
+            </div>
+             <div class="top-section">
+                <p><em>**Poster available below the paper.</em></p>
+
+                                <a href="PomeloPoster.png" download class="download-button" target="_blank">Download Poster</a>
+
+                
+            </div>
+           
+                <embed src="Pomelo_a_Collaborative_Education_Technology_Interaction_Robot.pdf" width="100%" height="800px" type="application/pdf">
+
+            <div class="image-container">
+                <img src="PomeloPoster.png" alt="Pomelo: A Collaborative Education Technology Interaction Robot Poster">
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>© 2024 ecetabag.com. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
