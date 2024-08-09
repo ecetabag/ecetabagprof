@@ -29,19 +29,24 @@
         .download-button {
             position: absolute;
             top: 20px;
-            left: 20px;
-            padding: 5px 10px;
+            right: 20px;
+            width: 30px; /* Set the size of the button */
+            height: 30px;
             background-color: #e02b9b; /* Pink background for the button */
-            color: #fff; /* White text color */
-            text-align: center;
+            border-radius: 50%; /* Make the button circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
-            font-family: 'Times New Roman', Times, serif; /* Font set to Times New Roman */
-            border-radius: 5px;
-            font-size: 0.9em; /* Smaller font size for the button */
             transition: background-color 0.3s;
         }
         .download-button:hover {
             background-color: #c02685; /* Darker pink on hover */
+        }
+        .download-button img {
+            width: 16px; /* Size of the download icon */
+            height: 16px;
+            filter: invert(1); /* Make the icon white */
         }
         h1 {
             color: #000; /* Set title color to black */
@@ -96,7 +101,9 @@
     </header>
     <section id="blog-post">
         <div class="container">
-            <a href="EceTabag_Resume.pdf" class="download-button" download target="_blank">Download Resume</a> <!-- Smaller Download Resume Button at the top left -->
+            <a href="EceTabag_Resume.pdf" class="download-button" download target="_blank">
+                <img src="download-icon.svg" alt="Download"> <!-- Download icon only -->
+            </a>
             <h1>Ece Tabağ</h1>
             <div class="contact-info">
                 <p><a href="mailto:ecetabag@berkeley.edu"><strong>Email:</strong> ecetabag@berkeley.edu</a> • <strong>Phone:</strong> +1 510-508-7914 • <a href="http://www.linkedin.com/in/ecetabag" target="_blank">LinkedIn</a></p>
