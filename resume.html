@@ -15,36 +15,47 @@
             font-style: normal;
         }
 
+        @font-face {
+            font-family: 'LTCTwentiethCenturyMedium';
+            src: url('LTCTwentiethCenturyMedium.woff2') format('woff2'),
+                 url('LTCTwentiethCenturyMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: 'RigidicaTextMedium', sans-serif;
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #e02b9b;
+            background-color: #fff0f5; /* Very light pink background for the whole page */
+            color: #000; /* Text color set to black */
         }
         .container {
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffe6f0; /* Very light pink background */
+            background-color: #fff; /* White background for the container */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: left; /* Align text to the left */
         }
         h1 {
-            color: #e02b9b;
+            color: #e02b9b; /* Pink color for the title */
+            font-family: 'RigidicaTextMedium', sans-serif;
             text-align: center;
         }
         h2 {
-            color: #e02b9b;
+            color: #e02b9b; /* Pink color for the titles */
+            font-family: 'RigidicaTextMedium', sans-serif;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 20px;
         }
         p, ul {
             margin: 10px 0;
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Use the LTCTwentiethCenturyMedium font for text */
         }
         ul {
             list-style-type: disc;
@@ -54,7 +65,7 @@
             margin-bottom: 10px;
         }
         a {
-            color: #e02b9b;
+            color: #e02b9b; /* Pink color for links */
             text-decoration: none;
         }
         a:hover {
@@ -101,4 +112,76 @@
                 <p><strong>Delta Consulting</strong>, Berkeley, CA</p>
                 <p><strong>Business Analyst</strong>, Feb 2024 - Present</p>
                 <ul>
-                    <li>Led in-depth market research and
+                    <li>Led in-depth market research and analysis for Educational Technology & Services clients, driving strategic solution development for a wide range of stakeholders, including Fortune 500 firms, startups, nonprofits, and government entities in the education sector.</li>
+                    <li>Collaborated with multidisciplinary teams to innovate and implement tailored solutions that meet the unique needs of diverse clients within the educational landscape.</li>
+                </ul>
+            </div>
+
+            <div>
+                <p><strong>Institute of Human Development, and the UC Berkeley Psychology Department</strong>, Berkeley, CA</p>
+                <p><strong>Research Assistant</strong>, Aug 2022 - May 2023</p>
+                <ul>
+                    <li>Worked under Mahesh Srinivasan, a psychology professor at UC Berkeley, and conducted on-site research for 48 weeks.</li>
+                    <li>Research focused on novel concept formation in young children, children's religious identity, and children's category knowledge and their interpretation of metaphors.</li>
+                </ul>
+            </div>
+
+            <div>
+                <p><strong>PEAR - Peer Arrangement</strong>, Istanbul, Turkey</p>
+                <p><strong>Founder and President</strong>, Jun 2020 - Aug 2022</p>
+                <ul>
+                    <li>Started a P2P platform, connecting tutors with students, used by 300+ students from 8 different grades within a semester.</li>
+                    <li>Developed a matching algorithm using JavaScript and HTML, enabling pairing students with volunteer mentors.</li>
+                    <li>Coordinated a team of 52 high school mentors, providing guidance and training for successful mentorship interactions.</li>
+                </ul>
+            </div>
+
+            <h2>Project, Leadership & Extracurricular Experience</h2>
+            <div>
+                <p><strong>West County Mandarin School - Volunteer Classroom Assistant</strong>, Sept 2023 - Dec 2023</p>
+                <ul>
+                    <li>Assisted the kindergarten and first-grade classes as an English teacher's assistant and collaborated with the teacher to support classroom management and educational activities for ten weeks.</li>
+                    <li>Conducted extensive observations of classroom interactions and comparisons, gaining valuable insights into teaching strategies and student behaviors.</li>
+                </ul>
+            </div>
+
+            <div>
+                <p><strong>UDEMY Content Creation</strong>, Sept 2020 - Aug 2022</p>
+                <ul>
+                    <li>Published six comprehensive Udemy courses on Python, Rapid Prototyping with Fusion360, Electronics with Raspberry Pi.</li>
+                    <li>Reached a total of 30,523 students worldwide (data from July 2023).</li>
+                    <li>Received positive feedback and high ratings from students, with an average course rating of 4.4/5 from 852 reviews, indicating the quality of instruction and the ability to communicate complex concepts effectively.</li>
+                    <li>Led a team of 15 high school students to produce and publish 12 online courses on design, electronics, and programming.</li>
+                </ul>
+            </div>
+
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://ecetabag.medium.com/intellectual-awareness-of-avians-music-cognition-4cd120618d30" target="_blank"><strong>Intellectual Awareness of Avians: Music Cognition</strong></a> - Medium, Oct 2021</li>
+                <li><a href="https://ieeexplore.ieee.org/document/8673160" target="_blank"><strong>Pomelo, a Collaborative Education Technology Interaction Robot</strong></a> - IEEE, Mar 2019</li>
+            </ul>
+
+            <h2>Honors/Certifications and Awards</h2>
+            <ul>
+                <li>American Red Cross Adult First Aid/CPR/AED</li>
+                <li>CITI Program (Essentials of Human Subjects Research, Social & Behavioral Research Investigators)</li>
+                <li>Information Technologies Award Class of 2022</li>
+                <li>Introduction to Avian Care and Medicine Online Course - UTennesseeX</li>
+                <li>Graphic Design Online Course - University of Colorado Boulder</li>
+                <li>ACM/IEEE International Conference Daegu, Korea Delegate's Choice Award</li>
+                <li>Robotex Estonia'18 2nd place in Entrepreneurial Challenge</li>
+            </ul>
+
+            <h2>Skills and Languages</h2>
+            <ul>
+                <li>Python, Fusion 360, Swift, HTML, CSS, Word, Excel, Adobe Photoshop</li>
+                <li>Turkish (Native), English (Fluent), Spanish (Beginner)</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 ecetabag.com. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
