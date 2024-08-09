@@ -8,14 +8,6 @@
     <link rel="icon" type="image/x-icon" href="tab2.png">
     <style>
         @font-face {
-            font-family: 'RigidicaTextMedium';
-            src: url('RigidicaTextMedium.woff2') format('woff2'),
-                 url('RigidicaTextMedium.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
             font-family: 'LTCTwentiethCenturyMedium';
             src: url('LTCTwentiethCenturyMedium.woff2') format('woff2'),
                  url('LTCTwentiethCenturyMedium.woff') format('woff');
@@ -24,7 +16,7 @@
         }
 
         body {
-            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Apply the LTCTwentiethCenturyMedium font to all text */
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Apply the same font to all text */
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -40,18 +32,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: left; /* Align text to the left */
+            position: relative; /* Position relative for the button placement */
         }
         .download-button {
-            display: block;
-            width: fit-content;
-            margin: 0 auto 20px auto;
-            padding: 10px 20px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 5px 10px;
             background-color: #e02b9b; /* Pink background for the button */
             color: #fff; /* White text color */
             text-align: center;
             text-decoration: none;
-            font-family: 'RigidicaTextMedium', sans-serif;
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif;
             border-radius: 5px;
+            font-size: 0.9em; /* Smaller font size for the button */
             transition: background-color 0.3s;
         }
         .download-button:hover {
@@ -59,19 +53,17 @@
         }
         h1 {
             color: #e02b9b; /* Pink color for the title */
-            font-family: 'RigidicaTextMedium', sans-serif; /* Keep the title font as RigidicaTextMedium */
             text-align: center;
+            margin-top: 50px; /* Add margin to avoid overlap with the button */
         }
         h2 {
             color: #e02b9b; /* Pink color for the section titles */
-            font-family: 'RigidicaTextMedium', sans-serif; /* Keep the section titles font as RigidicaTextMedium */
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 20px;
         }
         p, ul {
             margin: 10px 0;
-            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Use the LTCTwentiethCenturyMedium font for all text */
         }
         ul {
             list-style-type: disc;
@@ -112,7 +104,7 @@
     </header>
     <section id="blog-post">
         <div class="container">
-            <a href="resume.pdf" class="download-button" download>Download Resume</a> <!-- Download Resume Button -->
+            <a href="EceTabag_Resume.pdf" class="download-button" download target="_blank">Download Resume</a> <!-- Smaller Download Resume Button at the top left -->
             <h1>Ece Tabağ</h1>
             <div class="contact-info">
                 <p><a href="mailto:ecetabag@berkeley.edu"><strong>Email:</strong> ecetabag@berkeley.edu</a> • <strong>Phone:</strong> +1 510-508-7914 • <a href="http://www.linkedin.com/in/ecetabag" target="_blank">LinkedIn</a></p>
