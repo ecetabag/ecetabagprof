@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post - ecetabag.com</title>
+    <title>Resume - ecetabag.com</title> <!-- Updated title -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="tab2.png">
     <style>
@@ -24,11 +24,11 @@
         }
 
         body {
-            font-family: 'LTCTwentiethCenturyMedium', sans-serif;
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Apply the LTCTwentiethCenturyMedium font to all text */
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #fff0f5; /* Very light pink background for the whole page */
+            background-color: #fffafa; /* Very light pink background for the whole page */
             color: #000; /* Text color set to black */
         }
         .container {
@@ -41,21 +41,37 @@
             border-radius: 8px;
             text-align: left; /* Align text to the left */
         }
+        .download-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 20px auto;
+            padding: 10px 20px;
+            background-color: #e02b9b; /* Pink background for the button */
+            color: #fff; /* White text color */
+            text-align: center;
+            text-decoration: none;
+            font-family: 'RigidicaTextMedium', sans-serif;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #c02685; /* Darker pink on hover */
+        }
         h1 {
             color: #e02b9b; /* Pink color for the title */
-            font-family: 'RigidicaTextMedium', sans-serif;
+            font-family: 'RigidicaTextMedium', sans-serif; /* Keep the title font as RigidicaTextMedium */
             text-align: center;
         }
         h2 {
-            color: #e02b9b; /* Pink color for the titles */
-            font-family: 'RigidicaTextMedium', sans-serif;
+            color: #e02b9b; /* Pink color for the section titles */
+            font-family: 'RigidicaTextMedium', sans-serif; /* Keep the section titles font as RigidicaTextMedium */
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 20px;
         }
         p, ul {
             margin: 10px 0;
-            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Use the LTCTwentiethCenturyMedium font for text */
+            font-family: 'LTCTwentiethCenturyMedium', sans-serif; /* Use the LTCTwentiethCenturyMedium font for all text */
         }
         ul {
             list-style-type: disc;
@@ -96,6 +112,7 @@
     </header>
     <section id="blog-post">
         <div class="container">
+            <a href="resume.pdf" class="download-button" download>Download Resume</a> <!-- Download Resume Button -->
             <h1>Ece Tabağ</h1>
             <div class="contact-info">
                 <p><a href="mailto:ecetabag@berkeley.edu"><strong>Email:</strong> ecetabag@berkeley.edu</a> • <strong>Phone:</strong> +1 510-508-7914 • <a href="http://www.linkedin.com/in/ecetabag" target="_blank">LinkedIn</a></p>
