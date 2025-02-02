@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - ecetabag.com</title> <!-- Updated title -->
+    <title>Resume - ecetabag.com</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="tab2.png">
     <style>
@@ -14,7 +14,7 @@
         padding: 0;
         background-color: ##f2f3f4;
         color: #000;
-        letter-spacing: -0.5px; /* Adjust letter spacing */
+        letter-spacing: -0.5px;
     }
     .container {
         width: 80%;
@@ -24,17 +24,17 @@
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        text-align: left; /* Ensure text is aligned to the left */
+        text-align: left;
         position: relative;
     }
         .download-button {
             position: absolute;
             top: 20px;
             right: 20px;
-            width: 30px; /* Set the size of the button */
+            width: 30px;
             height: 30px;
-            background-color: ##f2f3f4; /* Pink background for the button */
-            border-radius: 50%; /* Make the button circular */
+            background-color: #111;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,20 +42,21 @@
             transition: background-color 0.3s;
         }
         .download-button:hover {
-            background-color: #c02685; /* Darker pink on hover */
+            background-color: #9c8e97;
         }
         .download-button img {
-            width: 16px; /* Size of the download icon */
+            width: 16px;
             height: 16px;
-            filter: invert(1); /* Make the icon white */
+            filter: invert(1);
         }
         h1 {
-            color: #000; /* Set title color to black */
+            color: #000;
             text-align: center;
-            margin-top: 50px; /* Add margin to avoid overlap with the button */
+            margin-top: 10px; 
+            align-items: center;/* Reduced margin to bring the name closer to the picture */
         }
         h2 {
-            color: #000; /* Set section titles color to black */
+            color: #000;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 20px;
@@ -75,7 +76,7 @@
             margin-bottom: 10px;
         }
         a {
-            color: #000; /* Set link color to black */
+            color: #000;
             text-decoration: none;
         }
         a:hover {
@@ -89,6 +90,26 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
+        .company-name {
+            font-size: 2em; /* Increase font size of company names */
+            font-weight: bold; /* Make company names bold */
+        }
+        .position {
+            font-style: italic; /* Italicize the position text */
+        }
+       .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
     </style>
 </head>
 <body>
@@ -99,7 +120,7 @@
         <nav>
             <ul>
                 <li><a href="index.html#home">home</a></li>
-                <li><a href="index.html#blog">papers</a></li>
+                <li><a href="index.html#research">papers</a></li>
                 <li><a href="resume.html">resume</a></li>
             </ul>
         </nav>
@@ -107,88 +128,98 @@
     <section id="blog-post">
         <div class="container">
             <a href="EceTabag_Resume.pdf" class="download-button" download target="_blank">
-                <img src="down.webp" alt="Download"> <!-- Download icon only -->
+                <img src="down.webp" alt="Download">
             </a>
-            <h1>Ece Tabağ</h1>
+
+           <div class="profile-container">
+                <img src="ece.png" alt="Ece Tabağ" class="profile-picture">
+            </div>
+            <h1> Ece Tabağ</h1>
             <div class="contact-info">
-                <p><a href="mailto:ecetabag@berkeley.edu"><strong>Email:</strong> ecetabag@berkeley.edu</a> • <strong>Phone:</strong> +1 510-508-7914 • <a href="http://www.linkedin.com/in/ecetabag" target="_blank">LinkedIn</a></p>
+                <p> <a href="mailto:ecetabag@berkeley.edu"><strong>Email:</strong> ecetabag@berkeley.edu</a> • <strong>Phone:</strong> +1 510-508-7914 • <a href="http://www.linkedin.com/in/ecetabag" target="_blank">LinkedIn</a></p>
             </div>
 
             <h2>Education</h2>
-            <p><strong>University of California Berkeley</strong>, Berkeley, CA</p>
+            <p><strong>University of California, Berkeley</strong>, Berkeley, CA</p>
             <p><strong>Bachelor of Arts in Cognitive Science</strong>, Expected Graduation: May 2026</p>
-            <p><strong>Minors:</strong> Political Economy and Education Double Minor, <strong>GPA:</strong> 3.80/4.00</p>
-            <p><strong>Relevant Coursework:</strong> Intro to Cognitive Science, Intro to Human Nutrition, Foundations of Data Science, Educational Perspectives on Literacy and Learning in a Global World, Discrete Math, The Aging Human Brain, Computational Structures in Data Science, Brain, Mind, and Behavior, Neuroethology: Complex Animal Behaviors and Brains, Sociology of Education</p>
+            <p><strong>Minors:</strong> Political Economy and Education Double Minor, <strong>GPA:</strong> 3.84/4.00</p>
 
-            <h2>Relevant Experience</h2>
+            <h2>Professional Experience</h2>
             <div>
-                <p><strong>Delta Consulting</strong>, Berkeley, CA</p>
-                <p><strong>Business Analyst</strong>, Feb 2024 - Present</p>
+                <p class="company-name" ><strong><u>Amazon Business</u></strong>, San Francisco, CA</p>
+                <p class="position"><strong>Contract Consultant & Senior Analyst - Delta Consulting</strong>, Sept 2024 – Dec 2024</p>
                 <ul>
-                    <li>Led in-depth market research and analysis for Educational Technology & Services clients, driving strategic solution development for a wide range of stakeholders, including Fortune 500 firms, startups, nonprofits, and government entities in the education sector.</li>
-                    <li>Collaborated with multidisciplinary teams to innovate and implement tailored solutions that meet the unique needs of diverse clients within the educational landscape.</li>
+                    <li>Built Qualtrics and Javascript behavioral measurement surveys to explore UC Berkeley students' impact on sustainable purchasing.</li>
+                    <li>Conducted 50+ interviews to assess sustainability priorities, defining a "Breaking Point" price for eco-friendly products.</li>
+                    <li>Synthesized findings into 7 recommendations, projected to increase sustainable product adoption in higher education by 15–20%.</li>
                 </ul>
             </div>
 
             <div>
-                <p style="letter-spacing: -0.5px; "><strong>Institute of Human Development, and the UC Berkeley Psychology Department</strong>, Berkeley, CA</p>
-                <p style="letter-spacing: -0.5px; "><strong>Research Assistant</strong>, Aug 2022 - May 2023</p>
+                 <p class="company-name" ><strong><u>IQXR - Mesmerise Group Company</u></strong>, San Francisco, CA</p>
+                <p class="position" ><strong>Junior Associate - AI Solutions Intern</strong>, Jul 2024 – Aug 2024</p>
                 <ul>
-                    <li>Worked under Mahesh Srinivasan, a psychology professor at UC Berkeley, and conducted on-site research for 48 weeks.</li>
-                    <li>Research focused on novel concept formation in young children, children's religious identity, and children's category knowledge and their interpretation of metaphors.</li>
+                    <li>Developed the Industry Trend Monitoring Bot, automating real-time trend tracking and saving the team 12+ hours weekly.</li>
+                    <li>Created an AI Tools Library and Report detailing 9 AI units and 63 tools to streamline discovery, raising tool adoption by 40%.</li>
+                    <li>Built the IQXR AI Prompt Library to train AI models for specific internal workflows, reducing task completion time by ~25%.</li>
+                    <li>Published the article “Leveraging XR for Training in Advanced Machinery Across Industries,” reaching 5,000+ industry-focused readers.</li>
+                    <li>Applied AI-driven Slack bots and icebreakers, boosting team engagement by 30% and fostering a cohesive virtual workplace.</li>
                 </ul>
             </div>
 
             <div>
-                <p><strong>PEAR - Peer Arrangement</strong>, Istanbul, Turkey</p>
-                <p><strong>Founder and President</strong>, Jun 2020 - Aug 2022</p>
+                <p class="company-name" ><strong><u> Udemy</u></strong>, San Francisco, CA</p>
+                <p class="position"><strong>Contract Consultant & Analyst - Delta Consulting</strong>, Feb 2024 - May 2024</p>
                 <ul>
-                    <li>Started a P2P platform, connecting tutors with students, used by 300+ students from 8 different grades within a semester.</li>
-                    <li>Developed a matching algorithm using JavaScript and HTML, enabling pairing students with volunteer mentors.</li>
-                    <li>Coordinated a team of 52 high school mentors, providing guidance and training for successful mentorship interactions.</li>
+                    <li>Implemented AI dubbing for multilingual content, projecting an increase in global reach by 25% through improved localization.</li>
+                    <li>Analyzed Udemy’s user engagement data using R, identifying trends across 10+ markets and delivering actionable insights.</li>
+                    <li>Designed trending targeted social media strategies, leveraging data insights to project a 20% increase in user engagement.</li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="company-name" ><strong><u>Language & Cognitive Development Lab</u></strong>, Berkeley, CA</p>
+                <p class="position"><strong>Research Assistant</strong>, Aug 2022 - May 2023</p>
+                <ul>
+                    <li>Conducted a 48-week on-site research with Dr. Mahesh Srinivasan, focusing on children’s cognitive and conceptual development.</li>
+                    <li>Investigated novel concept formation, children’s religious identity, and interpretation of metaphors through category knowledge.</li>
+                    <li>Designed and executed experiments, analyzed data using R and SPSS, and contributed findings to academic research initiatives.</li>
                 </ul>
             </div>
 
             <h2>Project, Leadership & Extracurricular Experience</h2>
             <div>
-                <p><strong>West County Mandarin School - Volunteer Classroom Assistant</strong>, Sept 2023 - Dec 2023</p>
+                <p><strong> <u>PEAR - Peer Arrangement</u></strong>, Istanbul, Turkey</p>
+                <p><strong>Founder and President</strong>, Jun 2020 - Present</p>
                 <ul>
-                    <li>Assisted the kindergarten and first-grade classes as an English teacher's assistant and collaborated with the teacher to support classroom management and educational activities for ten weeks.</li>
-                    <li>Conducted extensive observations of classroom interactions and comparisons, gaining valuable insights into teaching strategies and student behaviors.</li>
+                    <li>Founded a P2P tutoring platform serving 300+ students with 52 mentors, improving academic outcomes for 85% of participants.</li>
+                    <li>Developed a matching algorithm with JavaScript, boosting pairing efficiency by 70% for optimal student-mentor matches.</li>
+                    <li>Organized 100+ tutoring sessions monthly with a 90% satisfaction rate and grew the mentor base by 40% in the first year.</li>
                 </ul>
             </div>
 
             <div>
-                <p><strong>UDEMY Content Creation</strong>, Sept 2020 - Aug 2022</p>
+                <p><strong><u>Udemy</u></strong>, Istanbul, Turkey</p>
+                <p><strong>Content Creator</strong>, Sept 2020 - Present</p>
                 <ul>
-                    <li>Published six comprehensive Udemy courses on Python, Rapid Prototyping with Fusion360, Electronics with Raspberry Pi.</li>
-                    <li>Reached a total of 30,523 students worldwide (data from July 2023).</li>
-                    <li>Received positive feedback and high ratings from students, with an average course rating of 4.4/5 from 852 reviews, indicating the quality of instruction and the ability to communicate complex concepts effectively.</li>
-                    <li>Led a team of 15 high school students to produce and publish 12 online courses on design, electronics, and programming.</li>
+                    <li>Published 6 courses on Python, Fusion360, and Raspberry Pi, helping 32,718+ students form foundational coding/design skills.</li>
                 </ul>
             </div>
 
             <h2>Publications</h2>
             <ul>
-                <li><a href="https://ecetabag.medium.com/intellectual-awareness-of-avians-music-cognition-4cd120618d30" target="_blank"><strong>Intellectual Awareness of Avians: Music Cognition</strong></a> - Medium, Oct 2021</li>
                 <li><a href="https://ieeexplore.ieee.org/document/8673160" target="_blank"><strong>Pomelo, a Collaborative Education Technology Interaction Robot</strong></a> - IEEE, Mar 2019</li>
             </ul>
 
-            <h2>Honors/Certifications and Awards</h2>
-            <ul>
-                <li>American Red Cross Adult First Aid/CPR/AED</li>
-                <li>CITI Program (Essentials of Human Subjects Research, Social & Behavioral Research Investigators)</li>
-                <li>Information Technologies Award Class of 2022</li>
-                <li>Introduction to Avian Care and Medicine Online Course - UTennesseeX</li>
-                <li>Graphic Design Online Course - University of Colorado Boulder</li>
-                <li>ACM/IEEE International Conference Daegu, Korea Delegate's Choice Award</li>
-                <li>Robotex Estonia'18 2nd place in Entrepreneurial Challenge</li>
-            </ul>
+            <h2>Skills, Activities, Languages & Interests
+</h2>
+            <ul><li>
+                <b> Skills & Languages:</b> Python, Fusion360, R Code, JavaScript, HTML, Adobe Photoshop/Illustrator, Turkish(Native), Spanish (B1)
+</li>
+                <li><b> Activities: </b> Delta Consulting Berkeley, Undergraduate Research Apprentice Program(URAP) Berkeley, Intramural Volleyball
+</li> <li><b> Interests: </b> Early Childhood Development and Education, Piano(13+ years), Music Composition, Multi-Iinstrumental Performance, Web Development(3+ clients, focusing on UX/UI design and functionality), Skiing(14+ years), Cultural Exploration(visited 35+ cities globally), Event Organization(organized annual Hisar Coding Summit for 6 and PiWars Turkey for 3 years)
 
-            <h2>Skills and Languages</h2>
-            <ul>
-                <li>Python, Fusion 360, Swift, HTML, CSS, Word, Excel, Adobe Photoshop</li>
-                <li>Turkish (Native), English (Fluent), Spanish (Beginner)</li>
+</li>
             </ul>
         </div>
     </section>
