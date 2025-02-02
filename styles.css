@@ -80,7 +80,7 @@ nav ul li a::after {
     display: block;
     height: 4px;  /* Increased from 2px to 4px */
     width: 0;
-    background: linear-gradient(45deg, #e02b9b, #e02b9b, #e02b9b);
+    background: linear-gradient(45deg, #9c8e97, #9c8e97, #9c8e97);
     transition: width 0.3s;
 }
 
@@ -107,12 +107,11 @@ section.keywords {
 
 section.keywords p span {
     font-weight: bold;
-    background: linear-gradient(45deg, #e02b9b, #e02b9b, #e02b9b);
+    background: linear-gradient(45deg, #9c8e97, #9c8e97, #9c8e97);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 0.0001em;
 }
-
 section h2 {
     font-family: 'Gill Sans', sans-serif;
     font-size: 30px;
@@ -161,9 +160,33 @@ section p {
     letter-spacing: 0em;
 }
 
+.blog-container, .research-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the row */
+    gap: 10px; /* Space between boxes */
+}
+
+.blog-post, .research-paper {
+    width: calc(50% - 20px); /* Ensures two boxes per row */
+    max-width: 400px; /* Prevents them from being too wide */
+    text-align: center; /* Centers text */
+    padding: 10px;
+    margin: 0 auto; /* Centers horizontally */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 .blog-post img, .research-paper img {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    height: auto;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 800px) {
+    .blog-post, .research-paper {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
 
 button, .read-more-button {
